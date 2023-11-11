@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Noizebreed Songtexte</title>
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <button id="open-menu" class="open-menu">≡</button>
+    <div class="menu" id="menu">
+      <button id="close-menu" class="close-menu">X</button>
+
+      <div class="songs">
+        <h2>Songs</h2>
+        <ul class="song-list" id="song-list">
+          <!--<li data-song-id="[Song ID]" data-path="song-texts/[Filename of Songtext]">[Song title] - [Artist Name]</li>-->
+        </ul>
+      </div>
+
+      <div class="setlists">
+        <h2>Setlists</h2>
+        <ul class="setlist-list" id="setlist-list">
+          <!--<li data-setlist-id="[Setlist ID]" data-path="setlists/[Filename of Setlist]">[Setlist Name]</li>-->
+        </ul>
+      </div>
+      
+    </div>
+    <div class="main-song-text-area" id="main-song-text-area">
+      <!-- HTML of song text should be shown here -->
+      <p>Select Song or Playlist from menu</p>
+    </div>
+    <div class="setlist-controls" id="setlist-controls">
+      <button id="previous-song-button" class="previous-song-button">◄</button>
+      <span class="setlist-counter" id="setlist-counter">
+        <span class="current-song-number" id="current-song-number">00</span>/<span class="total-song-number" id="total-song-number">00</span>
+      </span>
+      <button id="open-setlist" class="open-setlist">≡</button>
+      <button id="next-song-button" class="next-song-button"><span class="next-song-button-text" id="next-song-button-text">ABC - ABC</span><span class="next-button-icon">►</span></button>
+    </div>
+    <div class="setlist" id="setlist">
+      <button id="close-setlist" class="close-setlist">X</button>
+      <h2>[Setlist Name]</h2>
+      <ul class="setlist-song-list" id="setlist-song-list" data-active-setlist-id="[Setlist ID]">
+        <!--<li data-song-id="[Song ID]" data-path="song-texts/[Filename of Songtext]">[Song title] - [Artist Name]</li>-->
+      </ul>
+    </div>
+
+    <script src="js/papaparse.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
